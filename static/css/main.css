@@ -1,0 +1,71 @@
+.hamburger {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  background: var(--navbar-colour-home);
+}
+
+.navbar-look {
+  flex-basis: 75%;
+}
+.navbar-look ul {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+.navbar-logo-stam {
+  position: relative;
+  top: 20px;
+  width: 124px;
+}
+.stam-additional {
+  position: absolute;
+  width: 65px;
+  top: 92px;
+  right: 0;
+}
+.stam-foot-logo {
+  fill: white;
+}
+.arrow-menu {
+  fill: white;
+  height: 9px;
+  width: 9px;
+}
+
+.navbar-look ul a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.btn-buy-tickets {
+  background-color: var(--btn-tickets-colour);
+  text-decoration: none;
+  color: var(--font-colour);
+  text-transform: uppercase;
+  line-height: 1rem;
+  padding: 0.5rem 0.85rem;
+  height: 58px;
+  align-content: center;
+}
+
+.btn-lang-change {
+  background-color: var(--btn-language-colour);
+  border-style: none;
+  color: white;
+  text-transform: uppercase;
+  height: 58px;
+}
+
+.navbar--b {
+  position: relative;
+}

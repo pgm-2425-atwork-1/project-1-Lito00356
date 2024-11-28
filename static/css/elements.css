@@ -1,0 +1,7 @@
+:root {
+  --navbar-colour-home: hsl(150, 57%, 34%);
+  --btn-tickets-colour: hsl(0, 0%, 16%);
+  --btn-language-colour: hsl(0, 0%, 33%);
+
+  --font-colour: hsl(0, 0%, 100%);
+}
