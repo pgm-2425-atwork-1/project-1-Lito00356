@@ -2,6 +2,9 @@
   --navbar-colour-home: hsl(150, 57%, 34%);
   --btn-tickets-colour: hsl(0, 0%, 16%);
   --btn-language-colour: hsl(0, 0%, 33%);
+  --agenda-orange: hsl(19, 100%, 50%);
+  --agenda-green: hsl(158, 100%, 27%);
 
   --font-colour: hsl(0, 0%, 100%);
+  --font-colour-inbetween: hsl(0, 0%, 16%);
 }
