@@ -91,15 +91,84 @@ body {
 .navbar--b {
   position: relative;
 }
+
+/* ---------- MAIN SECTION BANNER IMAGE --------------------*/
+
+.main-banner-image {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
 .main-image {
   width: 100%;
 }
+.main-banner-layout {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+}
+.main-image-logo {
+  fill: white;
+  max-width: 71.875rem;
+}
+.main-image-arrow {
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+  width: 4.125rem;
+  height: 5.325rem;
+  fill: white;
+}
+/* ---------------- AGENDA ---------- */
+.agenda-title {
+  margin: 4rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.agenda-folder {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+.agenda-folder-item {
+  background-color: rgb(255, 102, 0);
+  width: 50%;
+}
+.agenda-folder-item--green {
+  background-color: #008855;
+  position: relative;
+}
+.agenda-folder-item img {
+  width: 100%;
+  position: relative;
+}
+.agenda-folder-content {
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+}
 
+.agenda-folder-content-subtitle {
+  color: black;
+}
+.agenda-svg {
+  position: absolute;
+  bottom: 30rem;
+  left: 2rem;
+  fill: white;
+  width: 25rem;
+  height: 20rem;
+}
+.visibility {
+  display: none;
+}
 /* -----------------FOOOOOTTTEEEER------------ */
 
 .container {
+  position: relative;
   width: 100%;
 }
+
 .footer-content {
   display: flex;
   flex-direction: column;
