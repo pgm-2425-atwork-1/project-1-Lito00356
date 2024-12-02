@@ -1,7 +1,29 @@
+@font-face {
+  font-family: "Albert Sans";
+  src: url("../fonts/AlbertSans-Regular.woff2") format("woff2"),
+    url("../fonts/AlbertSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("../fonts/AlbertSans-Italic.woff2") format("woff2"),
+    url("../fonts/AlbertSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  font-family: "Albert Sans";
+}
+/* HAMBURGER MENU */
 .hamburger {
   display: none;
 }
 
+/* NAVBAR MENU */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -68,4 +90,113 @@
 
 .navbar--b {
   position: relative;
+}
+.main-image {
+  width: 100%;
+}
+
+/* -----------------FOOOOOTTTEEEER------------ */
+
+.container {
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border-top: 1px grey solid;
+  padding-top: 1.5rem;
+}
+.container-100--footer-end {
+  background-color: var(--btn-tickets-colour);
+}
+
+.footer-end {
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-stam-svg {
+  width: 306px;
+  height: 240px;
+}
+.footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.footer-vlaanderen-verbeelding {
+  display: flex;
+  gap: 10px;
+}
+.footer-news-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-green-box {
+  background-color: #008855;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 95%;
+  padding: 10px 0;
+}
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-socials svg {
+  width: 15px;
+  height: 15px;
+  outline: 1px solid black;
+  outline-offset: 6px;
+  border-radius: 50%;
+}
+.footer-languages-select {
+  display: flex;
+  gap: 8px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.footer-rights {
+  display: flex;
+  gap: 1rem;
+}
+.footer-erfgoed-logo {
+  fill: white;
+  width: 5rem;
+}
+.footer-made-by {
+  display: flex;
+  gap: 10px;
+}
+
+.orange-fill {
+  fill: hsl(10, 100%, 50%);
+}
+.white-fill {
+  fill: hsl(0, 0%, 100%);
 }
