@@ -374,8 +374,13 @@ body {
 }
 .footer-stam-svg-small {
   width: 15px;
-  display: block;
+  display: none;
   width: 3.75rem;
+}
+@media (max-width: 1020px) {
+  .footer-stam-svg-small {
+    display: block;
+  }
 }
 .footer-socials {
   display: flex;
