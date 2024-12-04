@@ -99,11 +99,10 @@ body {
   align-items: end;
   align-self: flex-start;
   gap: 0.625rem;
+  flex-shrink: 0;
 }
 .stam-foot-logo {
   fill: white;
-}
-.index-logo {
 }
 
 /* ---------- MAIN SECTION BANNER IMAGE --------------------*/
@@ -308,10 +307,12 @@ body {
   width: 85%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
   border-top: 1px grey solid;
   padding-top: 1.5rem;
+  gap: 1.5rem;
 }
 .container-100--footer-end {
   background-color: var(--btn-tickets-colour);
@@ -322,10 +323,11 @@ body {
   margin: 0 auto;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.footer-stam-svg {
+.footer-stam-svg-large {
   width: 306px;
   height: 240px;
 }
@@ -337,6 +339,7 @@ body {
 .footer-adress {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1.5rem;
 }
 .footer-title {
   font-size: 1.5rem;
@@ -351,19 +354,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
+  flex-basis: 18.75rem;
 }
 .footer-green-box {
   background-color: #008855;
   color: white;
   text-align: center;
   font-size: 0.9rem;
-  width: 95%;
+  width: 100%;
   padding: 10px 0;
+  margin: 0 auto;
+}
+.footer-social-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+}
+.footer-stam-svg-small {
+  width: 15px;
+  display: block;
+  width: 3.75rem;
 }
 .footer-socials {
   display: flex;
   gap: 1.5rem;
 }
+
 .footer-socials svg {
   width: 15px;
   height: 15px;
