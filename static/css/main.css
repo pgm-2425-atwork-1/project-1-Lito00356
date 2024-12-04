@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 58px;
+  height: 94px;
   background: var(--navbar-colour-home);
 }
 
@@ -43,13 +43,13 @@ body {
 }
 .navbar-logo-stam {
   position: relative;
-  top: 20px;
-  width: 124px;
+  top: 33px;
+  width: 194px;
 }
 .stam-additional {
   position: absolute;
-  width: 65px;
-  top: 92px;
+  width: 101px;
+  top: 165px;
   right: 0;
 }
 .stam-foot-logo {
@@ -74,10 +74,11 @@ body {
   text-decoration: none;
   color: var(--font-colour);
   text-transform: uppercase;
-  line-height: 1rem;
-  padding: 0.5rem 0.85rem;
-  height: 58px;
+  line-height: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  height: 94px;
   align-content: center;
+  font-size: 1.5rem;
 }
 
 .btn-lang-change {
@@ -85,7 +86,9 @@ body {
   border-style: none;
   color: white;
   text-transform: uppercase;
-  height: 58px;
+  height: 94px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
 }
 
 .navbar--b {
@@ -181,12 +184,81 @@ body {
 .visibility {
   display: none;
 }
-/* -----------------FOOOOOTTTEEEER------------ */
 
-.container {
+/* ---==-=-=-=-=-=-= UITGELICHT -=-=-=-=---=-=-=-= */
+.container-85 {
+  margin-bottom: 4rem;
+}
+.uit-full {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+.uitgelicht-title {
+  margin: 4rem 4rem 2rem 4rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.uitgelicht-card {
+  background-color: var(--uitgelicht-colour);
+  padding: 32px 64px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.uitgelicht-card--border {
+  border-left: 1px solid black;
+}
+.uit-img-title {
+  display: flex;
+  justify-items: center;
+  padding-bottom: 2rem;
+}
+.uit-img {
+  width: 15.625rem;
+  max-height: 180px;
+}
+.uit-title {
+  font-size: 2.0625rem;
+  font-weight: 500;
+  padding-left: 3rem;
+}
+
+/* -------- GRID OF ARTICLES --------------- */
+.grid-article-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.grid-article-card {
+  flex: 1 1 30%;
+  padding: 1rem;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  min-width: 300px;
+}
+.grid-article-text-content * {
+  padding: 0.4rem;
+}
+.relative-pos {
   position: relative;
+}
+.grid-article-svg {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.grid-article-image {
   width: 100%;
 }
+/* -----------------FOOOOOTTTEEEER------------ */
 
 .footer-content {
   display: flex;
