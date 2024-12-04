@@ -19,8 +19,16 @@ body {
   font-family: "Albert Sans";
 }
 /* HAMBURGER MENU */
+
 .hamburger {
-  display: none;
+  display: block;
+  fill: white;
+  padding: 1.5rem 2.5rem;
+}
+@media (min-width: 63.75rem) {
+  .hamburger {
+    display: none;
+  }
 }
 
 /* NAVBAR MENU */
@@ -32,36 +40,29 @@ body {
   background: var(--navbar-colour-home);
 }
 
-.navbar-look {
+.navbar-a {
   flex-basis: 75%;
+  font-size: 1.5rem;
 }
-.navbar-look ul {
+@media (max-width: 63.75rem) {
+  .navbar-a {
+    display: none;
+  }
+}
+.navbar-a ul {
   display: flex;
   gap: 32px;
   list-style-type: none;
   padding: 0 1rem;
 }
-.navbar-logo-stam {
-  position: relative;
-  top: 33px;
-  width: 194px;
-}
-.stam-additional {
-  position: absolute;
-  width: 101px;
-  top: 165px;
-  right: 0;
-}
-.stam-foot-logo {
-  fill: white;
-}
 .arrow-menu {
   fill: white;
-  height: 9px;
-  width: 9px;
+  height: 1rem;
+  width: 1rem;
+  min-width: 1rem;
 }
 
-.navbar-look ul a {
+.navbar-a ul a {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -79,6 +80,7 @@ body {
   height: 94px;
   align-content: center;
   font-size: 1.5rem;
+  flex-grow: 1;
 }
 
 .btn-lang-change {
@@ -90,9 +92,18 @@ body {
   padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
 }
-
-.navbar--b {
-  position: relative;
+.stam-logos {
+  width: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-self: flex-start;
+  gap: 0.625rem;
+}
+.stam-foot-logo {
+  fill: white;
+}
+.index-logo {
 }
 
 /* ---------- MAIN SECTION BANNER IMAGE --------------------*/
@@ -104,23 +115,43 @@ body {
 }
 .main-image {
   width: 100%;
+  height: 90vh;
+  object-fit: cover;
 }
-.main-banner-layout {
+.main-image-logo {
+  display: block;
   position: absolute;
   bottom: 3rem;
   left: 2rem;
-}
-.main-image-logo {
   fill: white;
   max-width: 71.875rem;
+}
+@media (min-width: 63.75rem) {
+  .small {
+    display: none;
+  }
+}
+.main-image-logo--large {
+  display: none;
+}
+@media (min-width: 63.75rem) {
+  .main-image-logo--large {
+    display: block;
+  }
 }
 .main-image-arrow {
   position: absolute;
   bottom: 3rem;
   right: 2rem;
-  width: 4.125rem;
-  height: 5.325rem;
+  width: 2rem;
+  height: 3rem;
   fill: white;
+}
+@media (min-width: 63.75rem) {
+  .main-image-arrow {
+    width: 4.125rem;
+    height: 5.325rem;
+  }
 }
 /* ---------------- AGENDA ---------- */
 .agenda-title {
@@ -130,12 +161,14 @@ body {
 }
 .agenda-folder {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   color: white;
 }
 .agenda-folder-item {
   background-color: var(--agenda-orange);
-  width: 50%;
+  flex: 1 1 50%;
+  min-width: 28.125rem;
 }
 .agenda-folder-item--green {
   background-color: var(--agenda-green);
@@ -146,13 +179,15 @@ body {
 }
 .agenda-folder-content {
   width: 80%;
-  height: 450px;
   margin: 0 auto;
+  padding-bottom: 3.75rem;
 }
-.agenda-folder-item img {
+.agenda-folder-item-img {
   width: 100%;
   position: relative;
+  top: 0;
 }
+
 .agenda-folder-content-title {
   font-size: 2.0625rem;
   font-weight: 500;
@@ -175,11 +210,11 @@ body {
 }
 .agenda-svg {
   position: absolute;
-  bottom: 30rem;
+  bottom: 1rem;
   left: 2rem;
   fill: white;
-  width: 25rem;
-  height: 20rem;
+  width: 20rem;
+  height: 15rem;
 }
 .visibility {
   display: none;
@@ -187,10 +222,11 @@ body {
 
 /* ---==-=-=-=-=-=-= UITGELICHT -=-=-=-=---=-=-=-= */
 .container-85 {
-  margin-bottom: 4rem;
+  flex: 1 1 50%;
 }
 .uit-full {
   display: flex;
+  flex-wrap: wrap;
   width: 85%;
   margin: 0 auto;
 }
@@ -199,20 +235,23 @@ body {
   font-size: 3rem;
   font-weight: 400;
 }
-.uitgelicht-card {
+.uit-card {
   background-color: var(--uitgelicht-colour);
   padding: 32px 64px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
-.uitgelicht-card--border {
+.uit-card--border {
   border-left: 1px solid black;
 }
 .uit-img-title {
   display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   padding-bottom: 2rem;
+  flex: 1 1 50%;
 }
 .uit-img {
   width: 15.625rem;
@@ -221,7 +260,7 @@ body {
 .uit-title {
   font-size: 2.0625rem;
   font-weight: 500;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
 }
 
 /* -------- GRID OF ARTICLES --------------- */
@@ -229,8 +268,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 82%;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 6.25rem auto;
 }
 .grid-article-card {
   flex: 1 1 30%;

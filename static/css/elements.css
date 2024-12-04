@@ -9,3 +9,7 @@
   --font-colour: hsl(0, 0%, 100%);
   --font-colour-inbetween: hsl(0, 0%, 16%);
 }
+
+.container-100 {
+  width: 100%;
+}
