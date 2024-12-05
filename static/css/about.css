@@ -1,34 +1,42 @@
 .navbar--about {
   margin-bottom: 4.75rem;
 }
+
 .about-title {
   margin: 2rem 0;
   font-size: 4.25rem;
   line-height: 75%;
 }
+
 .images-container {
   width: 100%;
   margin: 2.5rem 0;
 }
+
 .images-container--top-image {
   height: 30vh;
 }
+
 .title-img {
   width: 100%;
   height: 30vh;
   object-fit: cover;
 }
+
 .about-intro {
   margin: 2rem 0;
 }
+
 .content-specs {
   padding-bottom: 19px;
   font-size: 1.1875rem;
   font-weight: 400;
 }
+
 .content-specs--last-item {
   padding-bottom: 0;
 }
+
 .content-specs a {
   color: black;
 }
@@ -36,25 +44,48 @@
   font-size: 1.5rem;
   padding-bottom: 1.3125rem;
 }
+
+.content-specs--gap {
+  margin-bottom: 5rem;
+}
+
 .content-title-specs {
   font-size: 2.0625rem;
   margin: 2.5rem 0;
 }
+
 .ul-list-specs {
   display: flex;
   gap: 1.5rem;
   list-style-type: none;
 }
+
 .ul-list-specs::before {
   content: "■";
 }
+
 .summary-title {
   font-size: 3rem;
   border-top: 1px solid black;
+  margin-bottom: 1rem;
 }
+
 summary {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
+
 .summary-title::after {
-  content: "x";
+  content: "+";
+  color: #46aaea;
+  /* font-size: 2.5rem;  */
+  /* CHECK HOE IK HET MIDDEN KAN VINDEN */
+  transition: 0.2s;
+  transform-origin: center;
+}
+
+details[open] > summary::after {
+  transform: rotate(45deg);
 }
