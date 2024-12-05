@@ -2,8 +2,85 @@
   margin-bottom: 4.75rem;
 }
 
-.about-title {
-  margin: 2rem 0;
+.page-title {
+  margin-bottom: 2rem;
   font-size: 4.25rem;
   line-height: 75%;
+}
+
+.title-img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  margin: 2.5rem 0;
+}
+.compartements {
+  display: flex;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.compartements-order {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* gap: 2rem; */
+}
+
+.compartements__style {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.title-box {
+  border-top: 1px solid black;
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+.time-sheet {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.time-sheet:nth-child(-n + 5) {
+  border-bottom: 1px solid black;
+}
+
+.compartements__style-para {
+  padding-top: 1.5rem;
+}
+
+.title-box--single {
+  padding-bottom: 1.5rem;
+}
+
+.compartements-order--right {
+  display: flex;
+  /* gap: 0.9375rem; */
+}
+.paragraph-box {
+  border-bottom: 1px solid black;
+  line-height: 140%;
+  padding: 0.5rem 0;
+}
+
+.paragraph-box p:nth-child(2) {
+  color: #545454;
+}
+
+.paragraph-box:nth-child(7) {
+  border: none;
+}
+
+.list-style {
+  list-style-type: square;
+  padding-top: 1.5rem;
+}
+
+.list-style__item:nth-child(2) {
+  padding: 0.5rem 0;
 }
