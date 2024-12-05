@@ -24,6 +24,7 @@ body {
   display: block;
   fill: white;
   padding: 1.5rem 2.5rem;
+  flex-shrink: 0;
 }
 @media (min-width: 63.75rem) {
   .hamburger {
@@ -302,7 +303,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .footer-contacts {
   width: 85%;
   margin: 0 auto;
